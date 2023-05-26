@@ -1,0 +1,5 @@
+catMed: $133.99
+Heartgard: $67.99
+Simparica: $168.41
+Nexgard: $72.99
+Allergyease:$900

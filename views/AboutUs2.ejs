@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us Page</title>
+         <!-- CSS only -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+         <!-- JavaScript Bundle with Popper -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+         
+        <link rel="stylesheet" type="text/css" media="all" href="styles/about-us.css">
+        <link rel="stylesheet" type="text/css" media="all" href="styles/navbarStyles.css">
+        <link rel="stylesheet" type="text/css" media="all" href="styles/footerStyles.css">
+    </head>
+
+    <body>
+        <!--Navigation Bar--> 
+        <%- include('./staples/navbar2.ejs') %>
+
+        <!--About Us Section--> 
+        <div class="about-section">
+        <h1><%= title %></h1>
+            <p>Chubbies is a locally owned and operated 
+            pet medicine supply store. Our mission is to provide dog 
+            and cat parents with everything that they need to ensure 
+            their pet lives a long and happy life. We love to talk about 
+            pets of all types and we are even more excited when you bring 
+            your furry family member into the store to meet us! We are 
+            constantly researching and learning about new medicines that 
+            can make our pets lives better. </p>
+
+            <p>Our goal is to provide a clean, pet friendly store that caters to
+            your dog or cat needs. While our store 
+            is not very large, we offer an experience that is fast, 
+            friendly, local, and less expensive supplies.</p> 
+        
+        </div>
+
+        <!--Meet the Team Section--> 
+        <br>
+        <h1><%= title1 %></h1>
+        <div class="row">
+            <div class="column">
+            <div class="card">
+                <img src="images/Jm.jpg" alt="Jm">
+                <div class="container">
+                <h2>Jm Mojica</h2>
+                <p class="title">Senior Veterinarian</p>
+                <p>j_mojica@chubbies.ph</p>
+                <p><button class="button"><a href="https://www.google.com/intl/fil/gmail/about/">Contact</a></button></p><!--Redirect to Google-->
+                </div>
+            </div>
+            </div>
+
+            <div class="column">
+            <div class="card">
+                <img src="images/Jan.png" alt="Daniel" >
+                <div class="container">
+                <h2>Jan Daniel Ng</h2>
+                <p class="title">Ceo & Founder</p>
+                <p>j_ng@chubbies.ph</p>
+                <p><button class="button"><a href="https://www.google.com/intl/fil/gmail/about/">Contact</a></button></p><!--Redirect to Google--> 
+                </div>
+            </div>
+            </div>
+        
+            <div class="column">
+            <div class="card">
+                <img src="images/Justin.png" alt="Justin" >
+                <div class="container">
+                <h2>Justin Naguit</h2>
+                <p class="title">Web Designer</p>
+                <p>j_naguit@chubbies.ph</p>
+                <p><button class="button"><a href="https://www.google.com/intl/fil/gmail/about/">Contact</a></button></p><!--Redirect to Google-->
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h1>NPM Packages</h1>
+                <p> ~ bcrypt
+                    ~ body-parser
+                    ~ connect-mongodb-session
+                    ~ ejs
+                    ~ express
+                    ~ connect-flash </p>
+                    <p>
+                    ~ express-session    
+                    ~ mongodb
+                    ~ mongoose
+                    ~ multer
+                    ~ nodemon
+                    ~ router
+                    ~ dotenv
+                     </p>
+    
+
+            
+            </div>
+
+        <!--Footer--> 
+        <%- include('./staples/footer.ejs') %>
+    </body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> My Account </title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!--css-->
+        <link rel="stylesheet" type="text/css" media="all" href="styles/settingstyle.css">
+        
+        <script type = "text/javascript" src="js/settings.js"></script> 
+    </head>
+    
+    <body>
+
+      <form action="/editUser" id="setting" method ="post">
+        <label for="name"><b>Name</b></label>     
+        <input type="text" value="<%=userEdit.name%>" name="name" id = "name">
+
+        <label for="address"><b>Address</b></label>
+        <input type="text" value="<%=userEdit.address%>" name="address" id="address">
+
+        <label for="contact"><b>Contact Number</b></label>
+        <input type="text" value="<%=userEdit.contact_no%>" name="contact" minlength="11" maxlength="11" id = "contact">
+
+        <label for="username"><b>Username</b></label>
+        <input type="text" value="<%=userEdit.username%>" name="username" id ="username">
+    
+        <label for="password"><b>Password</b></label>
+        <input type="password" value="<%=password%>" name="password" id = "password" minlength="8" maxlength="20">
+        
+        <% if(error_msg) { %>    
+          <p class = "error"> <%= error_msg %> </p>
+        <% } %>
+        
+        <% if(success_msg) { %>    
+          <p class = "successMsg"> <%= success_msg %> </p>
+        <% } %>
+        
+        <button  type="submit" class="registerbtn">Save</button>
+      </form>
+    </body>
+</html>

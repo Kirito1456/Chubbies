@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home Page</title>
+<link rel="stylesheet" type="text/css" media="all" href="styles/home.css">
+<link rel="stylesheet" type="text/css" media="all" href="styles/navbarStyles.css">
+<link rel="stylesheet" type="text/css" media="all" href="styles/footerStyles.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type = "text/javascript" src="js/indexScript.js"></script> 
+    </head>
+    <body>
+
+
+    <!--Navigation Bar--> 
+    <%- include('./staples/navbar2.ejs') %>
+
+
+        <!--Home Page--> 
+        <div class="home-image" >
+        <div class="home-text">
+            <h1><%= title %></h1>
+            <p>and thank you for visiting our website! </p>
+            <p>We appreciate that you are curious about our company 
+                and look forward to meeting you in our store in the near future.</p>
+            
+            <!--For Login Form to appear--> 
+           
+              
+            <button id="bmodal" >Start Now!</button>
+            <% if(error_msg) { %>    
+                <p class = "error "> <%= error_msg %> </p>
+              <% } %>	
+        </div>
+        </div>
+
+        <!--Login Form--> 
+        <div id="id01" class="login">
+            <form class="login-content" action="/login" id="loginForm" method="post">
+            <div class="imgcontainer">
+                <span  id="bmodal2" class="close">&times;</span>
+                <img src="images/icon.jpg" alt="Avatar" class="avatar">
+            </div>
+
+    <div class="container">
+		  <label for="username"><b>Username</b></label>
+		  <input type="text" placeholder="Enter Username" name="username" id="uname" required>
+
+          <label for="password"><b>Password</b></label>
+		  <input type="password" placeholder="Enter Password" name="password" id="password" minlength="8" maxlength="20" required>
+         
+
+
+		  <button id="submit">Login</button>
+		  <label>
+			  <input type="checkbox" checked="unchecked" name="remember"> Remember me
+		  </label>
+    </div>
+    </form>
+</div>
+
+        <!--Products Preview-->
+        <div class="products-section">
+        <h1>Sample Products</h1>
+        <div class="products-container">
+            <div class="products">
+            <div class="noprod">1 / 5</div>
+            <img src="uploads/allergyease.jpg" alt="product1">
+            <div class="caption">Allergyease: $900/bottle</div>
+            </div>
+        
+            <div class="products">
+            <div class="noprod">2 / 5</div>
+            <img src="uploads/catMed.png"  alt="product2">
+            <div class="caption">catMed: $133.99/box</div>
+            </div>
+        
+            <div class="products">
+            <div class="noprod">3 / 5</div>
+            <img src="uploads/heartgard.png"  alt="product3">
+            <div class="caption">Heartgard: $67.99/box</div>
+            </div>
+
+            <div class="products">
+            <div class="noprod">4 / 5</div>
+            <img src="uploads/nexgard.png" alt="product4">
+            <div class="caption">Nexgard: $72.99/box</div>
+            </div>
+
+            <div class="products">
+            <div class="noprod">5 / 5</div>
+            <img src="uploads/simparica.png" alt="product5">
+            <div class="caption">Simparica: $168.41/box</div>
+            </div>
+            
+            <a id="prev" class="prev" >❮</a>
+            <a id="next" class="next" >❯</a>
+        
+        </div>
+        <br>
+        
+        <div>
+            <span class="indicator"></span> 
+            <span class="indicator"></span> 
+            <span class="indicator"></span> 
+            <span class="indicator"></span> 
+            <span class="indicator"></span> 
+        </div>
+        </div>
+
+    <!--Footer--> 
+    <%- include('./staples/footer.ejs') %>
+
+</body>
+</html>

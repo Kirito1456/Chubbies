@@ -1,0 +1,66 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+/*carousel*/
+.carousel {
+  margin-left: auto;
+  margin-right: auto;
+  width:300px;
+  height: 400px;
+}
+
+.filterButtons{
+  width: 100%; 
+	background-color: transparent;
+  border: none;
+}
+
+.filterButtons:hover {
+	background-color:rgba(14, 110, 188, 0.863);
+	color: white;
+  }
+
+/*Products*/
+td { 
+  padding-right: 40px;
+  padding-left: 30px;
+}
+
+.table-image{
+  text-align:center; 
+}
+
+.checked {
+  color: orange;
+}
+
+.product-container{
+  margin-right: 50px;
+}
+
+.products{
+  text-align:center; 
+}
+
+.product-description{
+  font-size: 10px;
+}
+
+.buttonsDiv{
+  width: 600px; 
+}
+
+
+.moreDiv{
+  width: 100px; 
+}
+
+.btn{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: grey;
+}
+
+.btn i:hover{
+  cursor: pointer;
+}
+

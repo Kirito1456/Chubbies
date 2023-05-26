@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title> My Account </title>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+        <!--css-->
+        <link rel="stylesheet" type="text/css" media="all" href="styles/adminStyle.css"> 
+        <script type = "text/javascript" src="js/settings.js"></script> 
+    </head>
+    
+    <body>
+        <form id="addProduct" form action="/add" method = "POST"  enctype="multipart/form-data">
+              <h1>Add a new Product</h1>
+              <p>Fill in the form below to add an item</p>
+
+              <% if(error_msg) { %>    
+                <p class = "error"> <%= error_msg %> </p>
+              <% } %>
+              
+              <% if(success_msg) { %>    
+                <p class = "successMsg"> <%= success_msg %> </p>
+              <% } %>
+              
+              <hr>
+              <label for="productName"><b>Product Name</b></label>
+              <input type="text" name="productName" required>
+        
+              <label for="price"><b>Price</b></label>
+              <input type="number" name="price" step = ".01" required>
+
+              <label for="stock"><b>Stock</b></label>
+              <input type="number" name="stock" required>
+        
+              <label for="Description"><b>Description</b></label>
+              <input type="text" name="description" required>
+        
+              <label for="productImage"><b>Image</b></label> </br>
+              <input type="file"  name="productImage" accept="image/*" required>
+            </br> </br>
+              <label for="productCategory"><b>Category</b></label>
+              <input type="text" name="productCategory" required>
+              <hr>
+                <!--<form action="/" method = "POST">-->
+                <button  type="submit" class="registerbtn">Add</button>
+          </form>
+        </body>
+</html>

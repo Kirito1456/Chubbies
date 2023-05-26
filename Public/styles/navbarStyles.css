@@ -1,0 +1,50 @@
+.bar {
+  overflow: hidden;
+  margin-top: 0%;
+  background-color: rgba(14, 110, 188, 0.863);
+}
+
+.logo{
+  height: 60px; 
+  width: 50px; 
+}
+
+ .logoDiv {
+  width: 10%; 
+  align-items: center;
+  
+}
+
+ .buttonDiv {
+  width: 90%; 
+  margin-top: 5px
+}
+
+.buttonDiv button {
+	float: left;
+	display: block;
+	background-color: transparent;
+	color: white;
+	text-align: center;
+	padding: 15px 25px;
+	text-decoration: none;
+	border: none; 
+  width: 15%;
+  height: 50px; 
+  
+  }
+
+.bar img {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+
+.bar button:hover {
+	background-color: #ddd;
+	color: black;
+  }

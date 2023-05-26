@@ -1,0 +1,28 @@
+.product{
+    height: 100px; 
+    width: 100px; 
+}
+
+th, td{
+    text-align: center;
+}
+
+button{
+    border: white; 
+    background-color: white;
+}
+
+.dash {
+    height:50px; 
+    width: 50px; 
+}
+
+.error{
+    color: red; 
+    font-size:110%; 
+}
+
+.successMsg{
+	color: red; 
+    font-size:110%; 
+}

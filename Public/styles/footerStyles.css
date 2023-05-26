@@ -1,0 +1,46 @@
+/*footer*/
+.footer {
+
+
+  padding: 20px 0px;
+  text-align: center;
+  background: #ddd;
+  height: 100px;
+  width: 100%;
+  bottom: 0;
+  top:0;
+  left: 0;
+  right: 0; 
+  position: relative;
+    /*
+  padding: 20px 0px;
+  text-align: center;
+    background: #ddd;
+    width: 100%;
+    height: 10%;*/
+ }
+
+.fa {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 1px 0px;
+    border-radius: 50%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  color: grey;
+}
+
+.fa-twitter {
+  color: grey;
+}
+
+.fa-instagram {
+  color: grey;
+}
